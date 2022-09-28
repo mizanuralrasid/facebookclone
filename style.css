@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Tangerine:wght@700&display=swap');
+body {
+    padding:0;
+    margin:0;
+}
+.facebook-header{
+        display: none;
+}
+.left{
+        width:50%;
+        text-align: center;
+        font-size: 20px;
+}
+
+.facebook-home-page{
+        display:flex;
+        height:100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background: #DFDFDF;
+}
+.right{
+        width:50%;
+        /* height: ; */
+        display: block;
+        justify-content: center;
+        /*background: #000EA8;*/
+        align-items :center;
+        font-size: 20px;
+        
+}
+.home-page{
+        height: 351px;
+        width: 396px;
+        background: #FFFFFF;
+        box-shadow: -1px 1px 10px #626262;
+        margin-left: 50%;
+        transform: translate( -50%);
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 10px;
+}
+.home-page p a{
+        text-decoration: none;
+        color:#000000;
+}
+#myform{
+        margin-top: 10px;
+}
+/* .loginform{
+        display :block;
+        text-align: center;
+} */
+input{
+        margin:0px 0px;
+        border:1px solid #000000;
+        width: 86%;
+        padding:16px 0px 16px 10px;
+        margin: 5px;
+        background: rgba(138, 137, 137,);
+        border: 1px solid gray;
+        border-radius: 4px;
+        font-size: 15px;
+        box-shadow: 1px 1px 2px rgb(221, 219, 219);
+}
+input[type=submit]{
+        padding: 9px 0px;
+        width: 89%;
+        color:#FFFFFF;
+        background: #1877f2;
+        font-weight: 800;
+        font-size: large;
+}
+
+input::-webkit-input-placeholder {
+        color: black; /*Change the placeholder color*/
+        opacity: 0.6; /*Change the opacity between 0 and 1*/
+   }
+
+
+.or{
+        display: none;
+}
+hr{
+        display:block;
+        width: 90%;
+        opacity: 0.5;
+}
+.btn{
+         border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        line-height: 48px;
+        padding: 0 16px;
+        margin:20px;
+        background: #42b72a;
+        color: #FFFFFF;
+        border: transparent;
+        font-family: 'Roboto', sans-serif;
+
+}
+.home-page p a{
+        text-decoration: none;
+        color:#1877f2;
+        font-size: 15px;
+        opacity: 1;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+
+        .facebook-header{
+                display: block;
+                height: 90%;
+                overflow: hidden;
+                background-color:#FFFFFF;
+        }
+        .facebook-header img{
+                width: 100%;
+                height: 100%;
+        }
+        .facebook-home-page{
+                background-color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                margin-top: 0px;
+                box-shadow: none;
+        }
+        .left{
+                margin-top: -150px;
+        }
+        .right{
+                width: 100%;
+
+                padding:0;
+                margin: 10px;
+        }
+         .right .home-page{
+                width:100%;
+                height:25rem;
+                background: #FFFFFF;
+                box-shadow : -1px 1px 10px #626262;
+                margin-left:50%;
+                transform: translate( -50%);
+                border-radius: 4px;
+                text-align: center;
+                margin-top: 10px;
+                box-shadow: none;
+        }
+        .facebook-home-page pre{
+                display: none;
+        }
+        /* .left img{ */
+                /* font-size: px; */
+        /* } */
+        input{
+                margin:0px 0px;
+                border:1px solid #000000;
+                width: 86%;
+                padding:12px 0px 12px 12px;
+                margin: 5px;
+                background: rgba(138, 137, 137, 0.1);
+                border: transparent;
+                border-radius: 4px;
+                font-size: 13px;
+                box-shadow: 1px 1px 2px rgb(221, 219, 219);
+        }
+        input::-webkit-input-placeholder {
+                color: black; /*Change the placeholder color*/
+                opacity: 0.4; /*Change the opacity between 0 and 1*/
+           }
+        input[type=submit]{
+                padding: 9px 0px;
+                width: 89%;
+                color:#FFFFFF;
+                background: #1877f2;
+                font-size: 17px;
+                font-weight: 500;
+        }
+        .home-page p a{
+                text-decoration: none;
+                color:#1877f2;
+                font-size: 11.5px;
+                opacity: 0.7;
+                font-weight: 500;
+                font-family: 'Roboto', sans-serif;
+        }
+        hr{
+                display: none;
+        }
+        .or{
+                opacity: 0.5;
+                font-size: 14px;
+                display: block;
+        }
+        .or::before{
+                content: "";
+                height: 1px;
+                width: 38%;
+                background: black;
+                position: absolute;
+                margin-left: -40%;
+                margin-top: 8px;
+                opacity: 0.2;
+                
+        }
+        .or::after{
+                content: "";
+                height: 1px;
+                width: 36%;
+                margin-top: 8px;
+                margin-left: 8px;
+                background: black;
+                position: absolute;
+                opacity: 0.2;
+        }
+        .btn{
+                color:white;
+                margin:20px;
+                padding: 2px 12px;
+                line-height: 26px;
+                font-size: 11.5px;
+                background: #42b72a;
+                color: #FFFFFF;
+                border-radius: 2px;
+                border: transparent;
+                font-family: 'Roboto', sans-serif;
+
+        }
+        .home-page img{
+                width: 100%;
+                margin-top: -20px;
+        }
+      }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>facebook home page using html and css</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="facebook-header">
+      <img src="/topnav.jpg" alt="">
+  </div>
+  <div class="facebook-home-page">
+          <div class="left">
+          <!-- <h1>facebook</h1> -->
+          <img src="dF5SId3UHWd.svg" alt="">
+          <pre>Connect with friends and the World <br /> around you on Facebook</pre>
+</div>     
+           <div class="right">
+          <div class="home-page">
+            <form action="" method="post" id="myform" name="myform" onsubmit="return validateform()">
+                  <div>
+                  <input class="" type="phone/email" placeholder="Mobile number or email address" name="user" id="phone or email" value="" /></div>
+                  <div>
+                  <input type="password" name="password" id="password" placeholder="Password" value="" />
+                  </div>
+                  <a href="home.html"><input type="submit" name="" id="submit" value="Log In" /></a>
+                </form>
+                
+               <p> <a href="forget.html">Forgotten password?</a></p> 
+               <hr>
+               <div class="or"> or</div>
+                <a href="#"><button class="btn" type="submit">Create New Account</button></a>
+
+</div>
+</div>
+  </div>
+  <!-- Project -->
+  <script>
+    function validateform(){
+        var user=document.myform.user.value;
+        var password=document.myform.password.value;
+        if(user==null || user==""){
+
+            alert("username cannot be blank");
+            return false;
+        }
+        else if(password==null || password==""){
+
+            alert("you must have a password to login your page");
+            return false;
+        }
+        else if(password.length<8){
+          alert("password at least 8 character long !")
+        }
+    }
+</script>
+</body>
+</html>
